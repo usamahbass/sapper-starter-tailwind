@@ -12,7 +12,19 @@
     yarn install or npm install
 ```
 
-3. watch tailwind and start your sapper project , run these commands in a seperate window
+3. build tailwind with Tailwind CLI or npx
+
+```bash
+    npx tailwindcss build styles.css -o output.css
+```
+
+4. add link css in src/template.html like this
+
+```bash
+    <link rel="stylesheet" href="output.css">
+```
+
+5. watch tailwind and start your sapper project , run these commands in a seperate window
 
 ```bash
     yarn watch:tailwind or npm run watch:tailwind
